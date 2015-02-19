@@ -1,0 +1,306 @@
+<form class="form-horizontal" role="form" id="estimateInquiry" action="sendInquiry.php" method="post">
+  <div class="panel" id="pricing">
+    <h2 class="panel-heading">Pricing</h2>
+    <div class="panel-body">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Next / Prev & slide buttons -->
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <a href="#carousel-example-generic" class="btn btn-warning hidden-xs hidden-sm" data-slide-to="0" name="prev" disabled>prev</a>
+            <a href="#carousel-example-generic" class="btn btn-warning hidden-xs hidden-sm" data-slide-to="1" name="next">next</a>
+          </div><!-- .btn-group -->
+
+          <div class="btn-group" style="margin-bottom:15px">
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-primary" data-slide-to="0">General</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="1">Layout</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="2">Images</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="3">Content</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="4">Public</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="5">Social</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="6">eCommerce</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="7">Admin</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="8">SEO</a>
+            <a name="navBtn" href="#carousel-example-generic" class="btn btn-default" data-slide-to="9">Submit</a>
+          </div><!-- .btn-group -->
+
+          <div name="total" class="pull-right label label-success hidden-md hidden-lg" style="font-size:1.4em"></div><!-- .label -->
+        </div><!-- .btn-toolbar -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <!-- ITEM 1 -->
+          <div class="item active">
+            <h3>General</h3>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="general" value="1"> I already have an existing website. (Simply need it maintained.)
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="general" value="3"> I need to add new feature(s) to an existing website.
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="general" value="8"> I need a basic website. (Nice looking, but just need to get point across.)
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="general" value="15"> I need a completely custom design -- with many bells and whistles.
+              </label>
+            </div><!-- .radio -->
+          </div><!-- .item -->
+
+          <!-- ITEM 2 -->
+          <div class="item">
+            <h3>Layout</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="layout" value="6"> I have a template, but it needs <em>minor</em> customization.
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="layout" value="10"> I have a template, but it needs <em>major</em> customization.
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="layout" value="20"> I would like a custom design created for my site.
+              </label>
+            </div><!-- .radio -->
+          </div><!-- .item -->
+
+          <!-- ITEM 3 -->
+          <div class="item">
+            <h3>Graphics & Images</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="layout" value="0"> I do not need graphics or pictures for my website.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="layout" value="3"> I have my own images. I just need them integrated.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="4"> I need some custom graphics made.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="4"> I need graphic mouse-over buttons.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="4"> I need a few stock photographs integrated.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="9"> I need several stock photographs integrated.
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="6"> I need a photo gallery.
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 4 -->
+          <div class="item">
+            <h3>Content</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="content" value="0"> I will add my content myself with a Content Manager.
+              </label>
+            </div><!-- .radio -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="content" value="3"> I will supply <input type="number" value="" placeholder="0" size="3" style="text-align:center"> page(s) of content in Rich Text Format.
+              </label>
+            </div><!-- .radio -->
+          </div><!-- .item -->
+
+          <!-- ITEM 5 -->
+          <div class="item">
+            <h3>Public Features</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="6"> Member Registration (login/logout)
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> Discussion Forums
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> RSS News Feeds
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="3"> Contact Form
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="3"> Links Page
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="4"> Site Search
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="2"> Email Auto-responders
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="8"> File Uploads
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="2"> Google Adsense Integration
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 6 -->
+          <div class="item">
+            <h3>Social Networking</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> <i class="fa fa-facebook-square"></i> Facebook
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> <i class="fa fa-google-plus-square"></i> Google+
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> <i class="fa fa-linkedin-square"></i> LinkedIn
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> <i class="fa fa-twitter-square"></i> Twitter
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 7 -->
+          <div class="item">
+            <h3>eCommerce</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> Simple shopping cart
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="10"> Database shopping cart
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="3"> PayPal Processing
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 8 -->
+          <div class="item">
+            <h3>Admin Features</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="3"> Off the shelf site Blog
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="6"> Custom Site Blog
+              </label>
+            </div><!-- .checkbox -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="1"> Traffic Statistic Reports
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 9 -->
+          <div class="item">
+            <h3>SEO (Search Engine Optimization)</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="5"> MetaTag Keyword Optimization
+              </label>
+            </div><!-- .checkbox -->
+          </div><!-- .item -->
+
+          <!-- ITEM 10 -->
+          <div class="item">
+            <h3>Submit</h3>
+            <div class="input-group">
+              <span class="input-group-addon">name <span class="glyphicon glyphicon-asterisk"></span></span>
+              <input type="text" class="form-control" name="inquiryName" min="2" required>
+            </div><!-- .input-group -->
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">email <span class="glyphicon glyphicon-asterisk"></span></span>
+              <input type="email" class="form-control" name="inquiryEmail" required>
+            </div><!-- .input-group -->
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">notes</span>
+              <textarea name="inquiryNotes" class="form-control" rows="3"></textarea>
+            </div><!-- .input-group -->
+            <br>
+            <div class="input-group">
+              send to:<br>
+              <label class="radio-inline">
+                <input type="radio" name="sendTo" value="both"> both of us
+              </label><!-- .radio-inline -->
+              <label class="radio-inline">
+                <input type="radio" name="sendTo" value="nate"> Nathaniel
+              </label><!-- .radio-inline -->
+              <label class="radio-inline">
+                <input type="radio" name="sendTo" value="user" class="hide"> <span id="userName"></span>
+              </label><!-- .radio-inline -->
+            </div><!-- .input-group -->
+            <br>
+            <button type="submit" class="btn btn-success" disabled>Send Inquiry</button>
+          </div><!-- .item -->
+
+        </div><!-- .carousel-inner -->
+
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <a href="#carousel-example-generic" class="btn btn-warning hidden-xs hidden-sm" data-slide-to="0" name="prev" disabled>prev</a>
+            <a href="#carousel-example-generic" class="btn btn-warning hidden-xs hidden-sm" data-slide-to="1" name="next">next</a>
+          </div><!-- .btn-group -->
+          <div name="total" class="pull-right label label-success" style="font-size:1.4em"></div><!-- .label -->
+        </div><!-- .btn-toolbar -->
+
+      </div><!-- .carousel -->
+    </div><!-- .panel-body -->
+  </div><!-- #pricing -->
+  <a href='#top' class='pull-right'><span class="glyphicon glyphicon-arrow-up"></span> back to top</a>
+</form>

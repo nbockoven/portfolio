@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: #f1f1f1;
+}
+h3.label{
+  margin-top: 0;
+}
+h3.label:hover, h3.label:focus, h3.label:active{
+  background-color: #2ba6cb;
+}
+
+.container{
+  margin: 0 auto;
+  width: 96%;
+}
+.outline{
+  text-shadow:
+  0 0 #2284a1,
+  0 1px #2284a1,
+  0 -1px #2284a1,
+  1px 0 #2284a1,
+  1px 1px #2284a1,
+  1px -1px #2284a1,
+  -1px 0 #2284a1,
+  -1px 1px #2284a1,
+  -1px -1px #2284a1;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+}
+
+li{
+  display: inline-block;
+}
+
+li table{
+  width: 140px;
+  height: 296px;
+}
+
+ul.legend{
+  margin: -15px 0 15px;
+  width: 100%;
+  text-align: center;
+}
+ul.legend li{
+  border-radius: 3px;
+  font-size: 1.2em;
+  padding: 1%;
+  text-shadow:
+    0 0 0 #1a1a1a,
+    0 1px 0 #1a1a1a,
+    0 -1px 0 #1a1a1a,
+    1px 0 0 #1a1a1a,
+    1px 1px 0 #1a1a1a,
+    1px -1px 0 #1a1a1a,
+    -1px 0 0 #1a1a1a,
+    -1px 1px 0 #1a1a1a,
+    -1px -1px 0 #1a1a1a;
+}
+
+.alert-box{
+  background-color: #00A0B0;
+}
+
+.top-bar{
+  padding-bottom: 5%;
+  border-bottom: 5px solid #00A0B0;
+}
+
+
+
+tr, td{
+  background: transparent;
+}
+
+
+
+/*** POPUP BUTTONS ***/
+#watched{
+  background-color: #EDC951;
+  border-color: #e8bb23;
+  color: #555555;
+}
+#unWatched{
+  background-color: #555555;
+  border-color: #555555;
+  color: #EDC951;
+}
+
+
+/*** RESULTS PROGRESS BARS ***/
+.progress.success .meter, .progress.alert .meter{
+  color: white;
+  text-shadow: 0 0 2px #000000;
+}
+
+/*** VOTED ***/
+.progress.success .meter, .voted{
+  background: #8FCD00;
+}
+.voted{
+  background: -webkit-repeating-linear-gradient(-45deg, #8FCD00, #8FCD00 45.5%, #ffffff 45.5%, #ffffff 100%);
+  background:    -moz-repeating-linear-gradient(-45deg, #8FCD00, #8FCD00 45.5%, #ffffff 45.5%, #ffffff 100%);
+}
+table.voted {
+  border-color: #8FCD00;
+}
+
+
+
+
+
+/*** WATCHED ***/
+.watched{
+  background: #F19231;
+  background: -webkit-repeating-linear-gradient(-45deg, #F19231, #F19231 45.5%, #ffffff 45.5%, #ffffff 100%);
+  background:    -moz-repeating-linear-gradient(-45deg, #F19231, #F19231 45.5%, #ffffff 45.5%, #ffffff 100%);
+}
+table.watched{
+  border-color: #F19231;
+}
+
+
+
+
+/*** OTHERS WATCHED ***/
+.progress.alert .meter, .others_watched{
+  background: #571D69;
+}
+.progress.alert .meter, .others_watched{
+  background: -webkit-repeating-linear-gradient(-45deg, #571D69, #571D69 45.5%, #ffffff 45.5%, #ffffff 100%);
+  background:    -moz-repeating-linear-gradient(-45deg, #571D69, #571D69 45.5%, #ffffff 45.5%, #ffffff 100%);
+}
+table.others_watched{
+  border-color: #571D69;
+}
+
+
+
+/*** YOU & OTHERS WATCHED ***/
+.youAndOthers_watched{
+  background: #9A2720;
+  background: -webkit-repeating-linear-gradient(-45deg, #9A2720, #9A2720 45.5%, #ffffff 45.5%, #ffffff 100%);
+  background:    -moz-repeating-linear-gradient(-45deg, #9A2720, #9A2720 45.5%, #ffffff 45.5%, #ffffff 100%);
+}
+table.youAndOthers_watched{
+  border-color: #9A2720;
+}
+
+
+
+
+.panel img, #results img{
+  height: 178px;
+  width: 120px;
+}
+
+.rateIconsss, .panelsss label{
+  float: left;
+}
+
+.rateIcon{
+  height: 16px;
+  width: 16px;
+  background: url("../images/icons-v2.png");
+}
+.liked{
+  background-position: -288px -144px;
+}
+.disliked{
+  background-position: -208px -144px;
+}
+.plus{
+  background-position: -192px -144px;
+}
+.fresh{
+  background-position: -256px -144px;
+}
+.rotten{
+  background-position: -272px -144px;
+}
+.notRated{
+  background: none;
+}

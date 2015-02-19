@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /beautifulWeb/
+Disallow: /movieClub/
+Disallow: /mytalab/
+Disallow: /mytalab2/
+Disallow: /old/

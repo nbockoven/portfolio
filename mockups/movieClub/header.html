@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>movieClub</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="js/foundation-4.1.6/css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/general_foundicons.css">
+    <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons.css">
+    <!--[if IE 7]>
+      <link rel="stylesheet" type="text/css" href="css/general_foundicons_ie7.css">
+      <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons_ie7.css">
+    <![endif]-->
+    
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function getResults(){
+        $.ajax({
+          type: 'POST',
+          url: 'functions.php',
+          data: {action: 'getResults'},
+          dataType: 'html',
+          cache: 'false',
+          success: function(output){
+            if(output == '0'){
+              $('#chart_div').html("<p>Opps!  No results.  Be the first to vote for the next movie.</p>");
+            }
+            else{
+              var theQueriedMovies = output.split('~');
+              var movies = new Array();
+              $('#chart_div').html('');
+              $('#chart_div').append("<table id='resultTable' style='width:100%'>");
+
+              var highestCount = 0;
+              var total = 0;
+
+              for(var i = 0; i < theQueriedMovies.length; i++){
+                var theMovie = theQueriedMovies[i].split('**');
+                var newArray = new Array();
+                newArray['id']       = theMovie[0];
+                newArray['title']    = theMovie[1];
+                newArray['photo']    = theMovie[2];
+                newArray['user_id']  = theMovie[3];
+                newArray['numVotes'] = parseInt(theMovie[4]);
+
+                if(i == 0){
+                  highestCount = newArray['numVotes'];
+                }
+                else if(newArray['numVotes'] > highestCount){
+                  highestCount = newArray['numVotes'];
+                }
+                total += newArray['numVotes'];
+                movies.push(newArray);
+              }
+
+              for(var i = 0; i < movies.length; i++){
+                //get the total, heighest vote count, and percentage
+                var thePercent = Math.floor((movies[i]['numVotes'] / total) * 100);
+                //conditions to determine progress bar color
+                if(movies[i]['numVotes'] == highestCount){
+                  var theColor = 'success';
+                }
+                else{
+                  var theColor = 'alert';
+                }
+                if(movies[i]['numVotes'] > 1){
+                  var theCount = movies[i]['numVotes'] + " votes";
+                }
+                else{
+                  var theCount = movies[i]['numVotes'] + " vote";
+                }
+                
+                //string of table to place in results div
+                var appendString = "<tr><td rowspan='2'><img src='" + movies[i]['photo'] + "' alt='" + movies[i]['title'] + "'></td><td style='width:80%;vertical-align:bottom;font-weight:bold'>" + movies[i]['title'] + "</td></tr><tr><td style='vertical-align:top'><div class='progress " + theColor + "' style='width:100%'><span class='meter' style='text-indent:1%;font-weight:bold;color:white;width: " + thePercent + "%'>" + theCount + "</span></div></td></tr>";
+                $('#resultTable').append(appendString);
+              }
+            }
+          }
+        });
+      }
+      $(getResults());
+    </script>
+  </head>
+  <body>
