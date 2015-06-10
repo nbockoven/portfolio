@@ -1,91 +1,84 @@
-<?
-  /*$userIP = $_SERVER['REMOTE_ADDR'];
-  date_default_timezone_set('America/Los_Angeles');
-  $timeStamp = date("g:ia T D, n/j/Y");
-  $info = "$userIP, $timeStamp\r\n";
-  $fileName = "visitors.txt";
-  $fp = fopen($fileName, 'a') or die("Sorry, file could not write.");
-  flock($fp, LOCK_EX);
-  fwrite($fp, "$info\r\n");
-  flock($fp, LOCK_UN);
-  fclose($fp);*/
-?>
-<!doctype html>
-<html>
-  <head lang="en">
-    <title>Nathaniel Bockoven | web developer | portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nathaniel Bockoven | Web Developer | Portfolio</title>
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-    <!-- font -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:300italic,400,700|Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?r=1">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="css/core-layout.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement("style")
-        msViewportStyle.appendChild(
-          document.createTextNode(
-            "@-ms-viewport{width:auto!important}"
-          )
-        )
-        document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
-      }
-      if (!Array.prototype.indexOf) {
-        Array.prototype.indexOf = function(searchElement, fromIndex){
-          var i, pivot = (fromIndex) ? fromIndex : 0, length;
-          if (!this)
-            throw new TypeError();
-
-          length = this.length;
-
-          if (length === 0 || pivot >= length)
-            return -1;
-
-          if (pivot < 0)
-            pivot = length - Math.abs(pivot);
-
-          for (i = pivot; i < length; i++) {
-            if (this[i] === searchElement)
-              return i;
-          }
-          return -1;
-        };
-      }
-
-      // GOOGLE ANALYTICS
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-47878808-1', 'nbockoven.name');
-      ga('send', 'pageview');
-    </script>
   </head>
-  <body data-spy="scroll" data-target=".navbar-nav">
-    <div id='top'></div>
-    <? include 'navbar.html' ?>
+  <body>
 
-    <div class='container'>
-      <? include 'web.html' ?>
-      <? //include 'app.html' ?>
-      <? include 'skillset.html' ?>
-      <? include 'about.html' ?>
-      <? include 'pricing.html' ?>
-    </div><!--.container-->
-    <? include 'contact.php' ?>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>
+          Nathaniel Bockoven
+          <br>
+          <small>web developer</small>
+        </h1>
+      </div><!-- .container -->
+    </div><!-- .jumbotron -->
 
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="js/magic.js"></script>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="#" alt="me" class="img-responsive">
+        </div><!-- .col-sm-4 -->
+        <div class="col-sm-4">
+          <img src="#" alt="me" class="img-responsive">
+        </div><!-- .col-sm-4 -->
+        <div class="col-sm-4">
+          <img src="#" alt="me" class="img-responsive">
+        </div><!-- .col-sm-4 -->
+      </div><!-- .row -->
+
+
+      <div class="row">
+        <div class="col-sm-9">
+          <h2 class="mt-0">web</h2>
+        </div><!-- .col-sm-9 -->
+        <div class="col-sm-3">
+          <img src="#" alt="picture of website" class="responsive">
+        </div><!-- .col-sm-3 -->
+      </div><!-- .row -->
+
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="#" alt="picture of website" class="responsive">
+        </div><!-- .col-sm-3 -->
+        <div class="col-sm-9">
+          <h2 class="mt-0">skillset</h2>
+        </div><!-- .col-sm-9 -->
+      </div><!-- .row -->
+
+
+      <div class="row">
+        <div class="col-sm-9">
+          <h2 class="mt-0">about me</h2>
+        </div><!-- .col-sm-9 -->
+        <div class="col-sm-3">
+          <img src="#" alt="me" class="responsive">
+        </div><!-- .col-sm-3 -->
+      </div><!-- .row -->
+
+    </div><!-- .container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
