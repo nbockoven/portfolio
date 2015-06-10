@@ -4,4 +4,6 @@
 
 .jumbotron h1 {
   color: white;
+  font-size: 56px; /*fallback*/
+  font-size: 6vw; /*responsive font-size*/
 }
