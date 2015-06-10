@@ -1,0 +1,7 @@
+.jumbotron {
+  background: #A9071E url( '../images/bright-squares.png' );
+}
+
+.jumbotron h1 {
+  color: white;
+}
