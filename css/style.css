@@ -2,8 +2,7 @@
   background: #A9071E url( '../images/bright-squares.png' );
 }
 
-.jumbotron h1 {
-  color: white;
+h1 {
   font-size: 56px; /*fallback*/
-  font-size: 6vw; /*responsive font-size*/
+  font-size: 5vw; /*responsive font-size*/
 }

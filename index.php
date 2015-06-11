@@ -21,61 +21,17 @@
   </head>
   <body>
 
-    <div class="jumbotron">
-      <div class="container">
-        <h1>
-          Nathaniel Bockoven
-          <br>
-          <small>web developer</small>
-        </h1>
-      </div><!-- .container -->
-    </div><!-- .jumbotron -->
-
-    <div class="container">
-
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
-          <img src="#" alt="me" class="img-responsive">
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <img src="#" alt="me" class="img-responsive">
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <img src="#" alt="me" class="img-responsive">
-        </div><!-- .col-sm-4 -->
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1 class="mt-0">
+            Nathaniel Bockoven
+            <br>
+            <small>web developer</small>
+          </h1>
+        </div><!-- .col-sm-6 -->
       </div><!-- .row -->
-
-
-      <div class="row">
-        <div class="col-sm-9">
-          <h2 class="mt-0">web</h2>
-        </div><!-- .col-sm-9 -->
-        <div class="col-sm-3">
-          <img src="#" alt="picture of website" class="responsive">
-        </div><!-- .col-sm-3 -->
-      </div><!-- .row -->
-
-
-      <div class="row">
-        <div class="col-sm-3">
-          <img src="#" alt="picture of website" class="responsive">
-        </div><!-- .col-sm-3 -->
-        <div class="col-sm-9">
-          <h2 class="mt-0">skillset</h2>
-        </div><!-- .col-sm-9 -->
-      </div><!-- .row -->
-
-
-      <div class="row">
-        <div class="col-sm-9">
-          <h2 class="mt-0">about me</h2>
-        </div><!-- .col-sm-9 -->
-        <div class="col-sm-3">
-          <img src="#" alt="me" class="responsive">
-        </div><!-- .col-sm-3 -->
-      </div><!-- .row -->
-
-    </div><!-- .container -->
+    </div><!-- .container-fluid -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
