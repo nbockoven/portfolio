@@ -21,20 +21,18 @@
   </head>
   <body>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h1 class="mt-0">
-            Nathaniel Bockoven
-            <br>
-            <small>web developer</small>
-          </h1>
-        </div><!-- .col-sm-6 -->
-      </div><!-- .row -->
-    </div><!-- .container-fluid -->
+   <div class="resize">
+    <img src="images/209359_526736696287_3390412_o.jpg" alt="me" class="background-me">
+    <h1 class="mt-0">
+      Nathaniel Bockoven
+      <br>
+      <small>web developer</small>
+    </h1>
+   </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/magic.js"></script>
   </body>
 </html>

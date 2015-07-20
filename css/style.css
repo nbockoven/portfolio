@@ -6,3 +6,17 @@ h1 {
   font-size: 56px; /*fallback*/
   font-size: 5vw; /*responsive font-size*/
 }
+
+.background-me {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+}
+
+.resize>h1 {
+  position: absolute;
+  top: 50%;
+  margin-top: -50%;
+}
