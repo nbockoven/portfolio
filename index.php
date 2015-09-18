@@ -81,7 +81,7 @@
       <? //include 'app.html' ?>
       <? include 'skillset.html' ?>
       <? include 'about.html' ?>
-      <? include 'pricing.html' ?>
+      <? if( $_GET['pricing'] ) include 'pricing.html' ?>
     </div><!--.container-->
     <? include 'contact.php' ?>
 
