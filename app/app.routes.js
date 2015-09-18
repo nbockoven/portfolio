@@ -14,12 +14,28 @@ portfolio.config(function( $stateProvider, $urlRouterProvider ){
     }
   })
 
-  .state('welcome', {
+  .state('home', {
     url: "/",
-    controller: "welcome",
-    templateUrl: "app/components/welcome/view.html",
     data: {
       pagetitle: 'Welcome'
+    },
+    views: {
+      "": {
+        controller: "home",
+        templateUrl: "app/components/home/view.html"
+      },
+      "about":{
+        controller: "about",
+        templateUrl: "app/components/about/view.html"
+      },
+      "skillset":{
+        controller: "skillset",
+        templateUrl: "app/components/skillset/view.html"
+      },
+      "web":{
+        controller: "web",
+        templateUrl: "app/components/web/view.html"
+      }
     }
   })
 

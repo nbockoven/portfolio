@@ -3,9 +3,35 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.8em;
 }
 
-.bg-office-desk {
+.bg-tan {
   background-color: #DED4B9;
 }
+.text-tan {
+  color: #DED4B9;
+}
+
+.bg-blue {
+  background-color: #64B6B1;
+}
+.text-blue {
+  color: #64B6B1;
+}
+
+.bg-red {
+  background-color: #CE534D;
+}
+.text-red {
+  color: #CE534D;
+}
+
+.bg-black {
+  background-color: #46433A;
+}
+.text-black {
+  color: #46433A;
+}
+
+
 
 
 .img-thumbnail {

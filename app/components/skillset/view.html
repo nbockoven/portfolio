@@ -1,0 +1,10 @@
+<div class="panel">
+  <div class="panel-body p-30">
+    <h2 class="mt-0 mb-20">skillset</h2>
+    <ul class="list-unstyled">
+      <li data-ng-repeat="skill in skills">
+        {{ skill.title }} <i class="fa fa-star text-red" data-ng-repeat="i in getNumber( skill.level ) track by $index"></i>
+      </li>
+    </ul>
+  </div><!-- .panel-body -->
+</div><!-- .panel -->

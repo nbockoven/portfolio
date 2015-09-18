@@ -20,28 +20,47 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="bg-office-desk">
+  <body class="bg-tan">
 
     <div class="container">
 
       <div class="row mt-10">
-        <div class="col-sm-7">
+        <div class="col-sm-8">
           <div class="panel">
             <div class="panel-body p-30">
-              <h1 class="mt-0">
+              <h1 class="m-0">
                 Nathaniel Bockoven
                 <br>
-                <small>web developer</small>
+                <small class="text-red">web developer</small>
               </h1>
             </div><!-- .panel-body -->
           </div><!-- .panel -->
-        </div><!-- .col-sm-6 -->
-        <div class="col-sm-5">
+
+          <div class="panel">
+            <div class="panel-body p-30">
+              <h2 class="m-0">
+                <i class="fa fa-cloud fa-fw"></i>
+                <span class="text-blue">Welcome</span> to my portfolio.
+                <br>
+                <small>
+                  Where all your wildest dreams come true.
+                  <i class="fa fa-magic fa-fw"></i>
+                </small>
+              </h2>
+            </div><!-- .panel-body -->
+          </div><!-- .panel -->
+
+        </div><!-- .col-sm-8 -->
+        <div class="col-sm-4">
           <img src="img/me-mustache.jpg" alt="Image of Nathaniel Bockoven" class="img-responsive img-thumbnail">
-        </div>
+        </div><!-- .col-sm-4 -->
       </div><!-- .row -->
 
-      <div data-ui-view></div>
+      <div data-ui-view="about"></div>
+
+      <div data-ui-view="skillset"></div>
+
+      <div data-ui-view="web"></div>
     </div><!-- .container -->
 
     <!-- JS -->
@@ -56,7 +75,10 @@
     <!-- APP -->
     <script src="app/app.module.js"></script>
     <!-- CONTROLLERS -->
-    <script src="app/components/welcome/controller.js"></script>
+    <script src="app/components/home/controller.js"></script>
+    <script src="app/components/about/controller.js"></script>
+    <script src="app/components/skillset/controller.js"></script>
+    <script src="app/components/web/controller.js"></script>
     <!-- ROUTER -->
     <script src="app/app.routes.js"></script>
 
