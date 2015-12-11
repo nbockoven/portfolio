@@ -1,44 +1,16 @@
-h1, h2, h3, h4, h5, h6 {
-  color: #46433A;
-  line-height: 0.8em;
+html, body {
+  height: 100%;
+  background-color: #006699; /*69D6FF*/
+  background: linear-gradient(#006699, #63CBF7, #69D6FF);
+  color: #ffffff;
 }
 
-.bg-tan {
-  background-color: #DED4B9;
-}
-.text-tan {
-  color: #DED4B9;
+body {
+  padding-top: 20px;
 }
 
-.bg-blue {
-  background-color: #64B6B1;
-}
-.text-blue {
-  color: #64B6B1;
-}
-
-.bg-red {
-  background-color: #CE534D;
-}
-.text-red {
-  color: #CE534D;
-}
-
-.bg-black {
-  background-color: #46433A;
-}
-.text-black {
-  color: #46433A;
-}
-
-
-
-
-.img-thumbnail {
-  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-  margin-bottom: 23px;
-  background-color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 3px;
+header h1 {
+  font-size: 9.8vw;
+  text-shadow: -2px -2px 4px #006699, -1px -1px 4px #006699;
+  line-height: 0.9;
 }
