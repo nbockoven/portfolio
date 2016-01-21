@@ -17,9 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- font -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:300italic,400,700|Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
     <!-- CSS -->
@@ -78,14 +78,17 @@
 
     <div class='container'>
       <? include 'web.html' ?>
-      <? //include 'app.html' ?>
+      <? // include 'app.html' ?>
       <? include 'skillset.html' ?>
       <? include 'about.html' ?>
-      <? include 'pricing.html' ?>
+      <? // include 'pricing.html' ?>
     </div><!--.container-->
     <? include 'contact.php' ?>
 
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- back to top button -->
+    <a href="#top" class="fa fa-arrow-circle-up text-muted" title="back to top"></a>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/magic.js"></script>
   </body>
 </html>
